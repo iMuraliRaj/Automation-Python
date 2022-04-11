@@ -13,6 +13,9 @@ def launchBrowser():
     # 4. We can use the driver from it's project itself. So  that we need to use (..\) in driver path.
     driver = webdriver.Chrome(executable_path="..\chromedriver.exe")
 
+    # It is used to Maximize the lauched browser
+    driver.maximize_window()
+
 
 # Calling the Launch Browser method, Because method only runs when it is called.
 launchBrowser()
