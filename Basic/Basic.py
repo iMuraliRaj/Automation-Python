@@ -28,13 +28,18 @@ def maximizeWindow():
     driver.maximize_window()
 
 
-
+def get(url):
+    # The get() is used to hit the link
+    # We need to pass an argument to the get method as the String value
+    # It will not return any value
+    driver.get(url)
 
 
 
 def basic():
     launchBrowser()
     maximizeWindow()
+    get("https://www.google.com/")
 
 
 # Calling the basic method, Because method only runs when it is called.
