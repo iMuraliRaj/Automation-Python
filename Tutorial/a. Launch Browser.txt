@@ -1,0 +1,12 @@
+Date: 14th February 2022
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as kk
+from selenium.webdriver.support.wait import WebDriverWait
+
+driver=webdriver.Chrome(executable_path="chromedriverlocation")
+
+driver.maximize_window()
+
+driver.get("https://logilabelntesting.azurewebsites.net/")
