@@ -1,0 +1,7 @@
+
+from zipfile import ZipFile
+downloadpath="D:\Download files"
+
+zipfilepath="D:\Download files\chromedriver_win32.zip"
+zip=ZipFile(zipfilepath)
+ZipFile.extractall(zip,downloadpath)
