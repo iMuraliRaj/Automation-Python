@@ -1,0 +1,10 @@
+dbcredentials="Driver={SQL Server};Server=192.168.0.199\SQLEXPRESS2019;Database=NIBSCNEW-01-02-2022;UID=sa;PWD=Krishna@007"
+dbconnect=pypyodbc.connect(dbcredentials)
+cursor=dbconnect.cursor()
+updatequery="update users set semail='xxx@agaramteh.com'"
+update=cursor.execute(updatequery)
+selectquery="select * from users"
+select=cursor.execute(selectquery)
+print(select)
+for i in select:
+    print(i)
