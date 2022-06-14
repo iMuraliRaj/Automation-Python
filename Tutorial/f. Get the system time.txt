@@ -1,0 +1,5 @@
+from datetime import datetime
+currentsysdatetime=datetime.today()
+print(currentsysdatetime)
+usrsysdatetime=currentsysdatetime.strftime("%d/%m/%Y %H:%M:%S")
+print(usrsysdatetime)
