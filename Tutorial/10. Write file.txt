@@ -1,0 +1,5 @@
+import time
+txtfile=open("D:\check\kk.txt","a")
+write=['1','2','3']
+txtfile.flush()
+txtfile.writelines(write)
