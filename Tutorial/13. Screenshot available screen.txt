@@ -1,0 +1,7 @@
+import pyscreenshot
+from selenium import webdriver
+
+driver=webdriver.Chrome(executable_path="../chromedriver.exe")
+driver.maximize_window()
+driver.get("http://192.168.0.199:9091/QuaLISWeb/#/login")
+pyscreenshot.grab().save("D:\\check\\test1.jpg")
